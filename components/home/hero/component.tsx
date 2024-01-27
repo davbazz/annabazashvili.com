@@ -38,7 +38,7 @@ export default function Hero() {
           <div className="relative -ml-7 -mr-0 mt-14 sm:-ml-4 flex h-[150%] w-[150%] items-center justify-center md:mt-12 md:-ml-6 lg:ml-0 md:h-[300px] md:w-[300px] lg:-mr-10 lg:-mt-12 lg:h-[460px] lg:w-[460px] xl:-mt-20 xl:h-[700px] xl:w-[700px]">
             <Blob />
             <iframe
-              className="z-10 mt-[70px] -ml-4 h-[170px] sm:mt-20 lg:mt-0 lg:h-[240px] xl:-mt-20 xl:h-[330px]"
+              className="z-10 mt-[70px] -ml-4 h-[170px] sm:mt-20 md:mt-8 md:ml-0 lg:mt-0 lg:h-[240px] xl:-mt-20 xl:h-[330px]"
               src="https://lottie.host/embed/fe1c5292-aa40-41cc-9325-f3f51d21e420/kFlWgWr3Jz.json"
             />
           </div>
