@@ -17,13 +17,14 @@ export default function Hero() {
               className={`${montserrat.className} inline-block text-[22px] leading-[34px] sm:text-3xl font-[700] sm:leading-[40px] xl:text-4xl xl:leading-[48px]`}
             >
               <span className="italic">Guiding</span> Minds,{" "}
-              <span className="italic">Inspiring</span> Hope:
+              <span className="italic">Inspiring</span>
+              <br className="sm:hidden" /> Hope:
               <br />
               Journey to Mental Wellness
               <br />
               Begins <span className="italic">Here</span>.
             </h1>
-            <h3 className="inline-block w-[210px] sm:w-[300px] text-wrap text-sm italic leading-6 md:w-[360px] lg:w-[420px] xl:w-[480px] xl:text-base xl:leading-7">
+            <h3 className="inline-block w-[210px] font-[500] sm:w-[300px] text-wrap text-sm italic leading-6 md:w-[360px] lg:w-[420px] xl:w-[480px] xl:text-base xl:leading-7">
               Discover a path to greater well-being with my professional
               counseling services. Your mental health matters and I'am here to
               help you thrive.
