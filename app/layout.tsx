@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} relative bg-secondary text-tertiary`}
+        className={`${poppins.className} relative bg-secondary text-tertiary overflow-x-hidden`}
       >
         <Header />
         {children}

@@ -1,6 +1,6 @@
 export default function Blob() {
   return (
-    <div className="absolute -z-10 h-full w-full">
+    <div className="absolute -z-10 h-[120%] w-[120%] md:h-[110%] md:w-[110%] lg:h-full lg:w-full">
       <svg
         viewBox="0 0 200 200"
         xmlns="http://www.w3.org/2000/svg"

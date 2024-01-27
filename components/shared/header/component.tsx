@@ -1,37 +1,35 @@
-"use client";
+'use client'
 
-import { Montserrat } from "next/font/google";
-import { useState } from "react";
-import Link from "next/link";
+import { Montserrat } from 'next/font/google'
+import { useState } from 'react'
+import Link from 'next/link'
 
-import navbarData from "@/stores/data/shared/header/navbar.json";
-import Container from "../ui/container/component";
-import Hamburger from "../ui/svg/hamburger/component";
-import Cancel from "../ui/svg/cancel/component";
+import navbarData from '@/stores/data/shared/header/navbar.json'
+import Container from '../ui/container/component'
+import Hamburger from '../ui/svg/hamburger/component'
+import Cancel from '../ui/svg/cancel/component'
 
-const montserrat = Montserrat({ weight: "600", subsets: ["latin"] });
+const montserrat = Montserrat({ weight: '600', subsets: ['latin'] })
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false)
 
   return (
     <header className="fixed top-6 z-20 w-full text-secondary">
       <Container>
         <div
-          className={`flex items-center justify-between bg-main px-6 py-[9px] xl:py-[10px] ${
-            isOpen ? "rounded-t-md md:rounded-md" : "rounded-md"
+          className={`flex items-center justify-between bg-main px-6 py-[11px] ${
+            isOpen ? 'rounded-t-md md:rounded-md' : 'rounded-md'
           }`}
         >
-          <a href="/">
-            <h2
-              className={`${montserrat.className} text-bold text-base lg:text-lg`}
-            >
+          <Link href="/">
+            <h2 className={`${montserrat.className} text-lg font-[600]`}>
               Anna Bazashvili
             </h2>
-          </a>
+          </Link>
 
           {/* desktop navbar*/}
-          <nav className="hidden gap-3 text-[12px] font-[600] md:flex lg:text-sm">
+          <nav className="hidden gap-3 text-sm font-[600] md:flex">
             {navbarData.map((data) => (
               <Link
                 href={data.path}
@@ -54,7 +52,7 @@ export default function Header() {
         {/* mobile navbar*/}
         {isOpen && (
           <div className="w-full rounded-b-md bg-main px-5 py-[1px] md:hidden">
-            <nav className="flex flex-col gap-2 border-t-[1px] border-secondary py-3 text-[13px] md:text-sm font-[600]">
+            <nav className="flex flex-col gap-2 border-t-[1px] border-secondary py-3 text-sm font-[600]">
               {navbarData.map((data) => (
                 <Link
                   href={data.path}
@@ -68,5 +66,5 @@ export default function Header() {
         )}
       </Container>
     </header>
-  );
+  )
 }
