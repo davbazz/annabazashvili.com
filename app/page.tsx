@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <About />
+      {/* <About />
       <Services />
       <Testimonials />
-      <FAQ />
+      <FAQ /> */}
     </main>
   )
 }
