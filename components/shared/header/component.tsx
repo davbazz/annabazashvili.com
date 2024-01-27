@@ -55,6 +55,7 @@ export default function Header() {
             <nav className="flex flex-col gap-2 border-t-[1px] border-secondary py-3 text-sm font-[600]">
               {navbarData.map((data) => (
                 <Link
+                  onClick={() => setIsOpen(!isOpen)}
                   href={data.path}
                   className="-ml-2 rounded-md p-2 hover:bg-secondary/30"
                 >
