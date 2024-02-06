@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import ArrowRight from '../../svg/arrowRight/component'
+import ArrowRight from "../../svg/arrowRight/component";
 
 export default function PricingButton() {
   return (
@@ -11,5 +11,5 @@ export default function PricingButton() {
       <p>Prices</p>
       <ArrowRight />
     </Link>
-  )
+  );
 }
